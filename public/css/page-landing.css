@@ -2,25 +2,39 @@
     
     background:linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
     text-align: center;
-    /* min-width: 100vh; */
-    height: 100vh;
+    min-width: 100vh;
+    /* height: 100vh; */
     display: flex;
     
 }
 
 #container{
     margin: auto;
-    width: min(90%, 112rem);
+    width: min(90%, 112rem); /*limitador*/
     
+}
+#logo{
+  animation-delay: 50ms;
 }
 
 .location, h1, .visit p{
     height: 16vh;
 }
+.location{
+    animation-delay: 100ms;
+}
 
+
+main h1{
+    font-size: clamp(4rem, 8vw, 8.4rem);
+    animation-delay: 150ms;
+}
 /* .visit p{
     height: 16vh;
 } */
+.visit p{
+    animation-delay: 200ms;
+}
 
 .visit a{
     margin: auto;
@@ -42,32 +56,20 @@
     background: #96feff;
 }
 
-#logo{
-    animation-delay: 50ms;
-}
 
-.location{
-    animation-delay: 100ms;
-}
 
-main h1{
-    font-size: clamp(4rem, 8vw, 8.4rem);
-    animation-delay: 150ms;
-}
 
-.visit p{
-    animation-delay: 200ms;
-}
 
 
 /* Desktop version */
 
 @media(min-width: 760px){
 #container{
-    padding: 5rem 2rem ;
+    padding: 5rem 2rem 1rem ;
     /**shorthhand backgroung image repeat position/ size */
     background: url("../images/bg.svg") no-repeat 80% /
     clamp(30rem, 54vw,56rem);
+    /*background-position: top center;*/
 
 }
 
@@ -88,6 +90,7 @@ main h1{
 
     main h1{
         /* font-size: 8vw; */
+        font-size: clamp(4rem, 8vw, 82.4rem);
         font-weight: bold;
         line-height: 0.88;
         margin: clamp(10%, 9vh, 12%)0 4rem;

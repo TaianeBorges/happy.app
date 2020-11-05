@@ -11,13 +11,23 @@
 
     }
 }
-@keyframes right{
+@keyframes right{ /*anime da barra lateral ongsPage*/
     from{
         transform: translateX(-100%);
     }
     to{
         transform: translateX(0);
     }
+}
+
+@keyframes apper{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
 }
 
 .animate-up{
@@ -29,4 +39,11 @@
 .animate-right{
     animation-name: right;
     animation-duration:300ms ;
+}
+
+.animate-appper{
+    animation-name: apper;
+    animation-duration: 300ms;
+    animation-fill-mode: backwards;
+
 }
